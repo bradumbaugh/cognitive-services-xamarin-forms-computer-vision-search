@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VisualSearchApp.AddKeysPage"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
+             Title="Add Keys">
+    <StackLayout Margin="20, 20, 20, 20">
+        <Label Text="Please enter API keys for the Microsoft Computer Vision and Bing Search APIs in the fields below."
+               FontSize="Large"/>
+        <Label Text="You can also set these values (ApiKeys.computerVisionKey and ApiKeys.bingSearchKey respectively) in the App.xaml.cs file of this project"
+               FontSize="Large"/>
+        <Entry Placeholder="Computer Vision API Key"
+               IsPassword="False"
+               Completed="CheckComputerVisionKey"
+               x:Name="ComputerVisionKeyEntry"
+               Margin="0, 40, 0, 0"/>
+        <Entry Placeholder="Bing Search API Key"
+               IsPassword="False"
+               Completed="CheckBingSearchKey"
+               x:Name="BingSearchKeyEntry"/>
+        <Button Text="Add Keys"
+                Clicked="TryToAddKeys"
+                Margin="0, 40, 0, 0"/>
+    </StackLayout>
+</ContentPage>

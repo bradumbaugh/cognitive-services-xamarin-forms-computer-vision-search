@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VisualSearchApp.WebResultsPage"
+             Title="Top Bing Results">
+    <StackLayout>
+        <ActivityIndicator Color="DeepSkyBlue" 
+                           HorizontalOptions="CenterAndExpand" 
+                           VerticalOptions="CenterAndExpand" 
+                           IsRunning="True" 
+                           IsVisible="True" 
+                           x:Name="LoadingIndicator" />
+        <ListView ItemsSource="{Binding Values}" 
+                  ItemSelected="ItemSelectedEventHandler" 
+                  CachingStrategy="RetainElement" 
+                  HorizontalOptions="CenterAndExpand" 
+                  x:Name="DataTable" 
+                  IsVisible="false">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding name}" 
+                              Detail="{Binding snippet}" 
+                              TextColor="{DynamicResource ListItemTextStyle}" 
+                              DetailColor="{DynamicResource ListItemDetailTextStyle}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

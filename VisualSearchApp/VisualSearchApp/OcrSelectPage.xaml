@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:VisualSearchApp"
+             x:Class="VisualSearchApp.OcrSelectPage"
+             NavigationPage.HasNavigationBar="False" 
+             NavigationPage.HasBackButton="True" 
+             NavigationPage.BackButtonTitle="Photo">
+    <ContentPage Title="Print OCR">
+        <StackLayout Margin="20,30,30,20">
+            <Label Text="From this page you can use Azure Computer Vision to extract printed text from images and query that text using Bing Search." 
+                   FontSize="Large" 
+                   Margin="0,0,0,20"/>
+            <Label Text="Press Take Photo or Import Photo to begin." 
+                   FontSize="Large" 
+                   Margin="0,0,0,20"/>
+            <Button x:Name="ButtonTakePrinted" 
+                    Text="Take Photo" 
+                    TextColor="White" 
+                    BackgroundColor="LightSeaGreen" 
+                    Clicked="TakePhotoButtonClickEventHandler" />
+            <Button x:Name="ButtonImportPrinted" 
+                    Text="Import Photo" 
+                    TextColor="White" 
+                    BackgroundColor="LightSeaGreen" 
+                    Clicked="ImportPhotoButtonClickEventHandler"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Handwritten OCR">
+        <StackLayout Margin="20,30,30,20">
+            <Label Text="From this page you can use Azure Computer Vision to extract handwritten text from images and query that text using Bing Search." 
+                   FontSize="Large" 
+                   Margin="0,0,0,20"/>
+            <Label Text="Press TAKE PHOTO or IMPORT PHOTO to begin." 
+                   FontSize="Large" 
+                   Margin="0,0,0,20"/>
+            <Button x:Name="ButtonTakeHandwritten" 
+                    Text="Take Photo" 
+                    TextColor="White" 
+                    BackgroundColor="MediumVioletRed" 
+                    Clicked="TakePhotoButtonClickEventHandler"/>
+            <Button x:Name="ButtonImportHandwritten" 
+                    Text="Import Photo" 
+                    TextColor="White" 
+                    BackgroundColor="MediumVioletRed" 
+                    Clicked="ImportPhotoButtonClickEventHandler"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>
