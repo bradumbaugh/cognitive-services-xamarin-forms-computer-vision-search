@@ -12,8 +12,8 @@ This sample is a Xamarin.Forms application which uses the Bing Computer Vision a
     
 2. Navigate to the folder where you cloned the repository.
 
-3. Double-click the Visual Studio 2015 Solution (.sln) file
-    SpeechToText-WPF-Sample.
+3. Double-click the Visual Studio 2015 Solution (.sln) file `VisualSearchApp.sln`
+
   
 
 ### Run the sample
