@@ -93,10 +93,14 @@ namespace VisualSearchApp
                     response = await VisionApiClient.PostAsync(ocrUri, content);
                 }
 
-                if ((response != null) && ((int)response.StatusCode == 200))
+                if ((int)response?.StatusCode == 200)
                 {
                     string ResponseString = await response.Content.ReadAsStringAsync();
                     JObject json = JObject.Parse(ResponseString);
+                    /*Here, we pull down each "line" of text and then join it to make a string representing the 
+                    * entirety of each line.  In the Handwritten endpoint, you are able to extract the "line" 
+                    * without any further processing.  If you would like to simply get a list of all extracted words,* you can do this with json.SelectTokens("$.regions[*].lines[*].words[*].text) 
+                    */
                     IEnumerable<JToken> lines = json.SelectTokens("$.regions[*].lines[*]");
                     foreach (JToken line in lines)
                     {
@@ -132,7 +136,7 @@ namespace VisualSearchApp
                     content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
                     response = await VisionApiClient.PostAsync(handwritingUri, content);
                 }
-                if ((response != null) && ((int)response.StatusCode == 202))
+                if ((int)response?.StatusCode == 202)
                 {
                     IEnumerable<string> values;
                     string statusUri = string.Empty;
@@ -156,7 +160,6 @@ namespace VisualSearchApp
                 Device.BeginInvokeOnMainThread(async () =>
                 {
                     await DisplayAlert("Error", "No words found.", "OK");
-                    await Task.Delay(TimeSpan.FromSeconds(0.1d));
                     await Navigation.PopAsync(true);
                 });
             }

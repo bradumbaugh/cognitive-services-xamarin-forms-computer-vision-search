@@ -14,7 +14,7 @@ This sample is a Xamarin.Forms application which uses the Bing Computer Vision a
 
 3. Double-click the Visual Studio 2015 Solution (.sln) file `VisualSearchApp.sln`
 
-  
+4. 
 
 ### Run the sample
 testtest 
