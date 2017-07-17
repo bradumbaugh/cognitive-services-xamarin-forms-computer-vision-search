@@ -1,3 +1,9 @@
+---
+services: cognitive-services,bing-web-search, computer-vision 
+platforms: csharp, Xamarin.Forms
+author: t-jolanz
+---
+
 # Sample - Visual Search App with Cognitive Services
 
 This sample illustrates how the [Azure Computer Vision API](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/) and [Bing Web Search API](https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/) can be used together to build a simple visual search application.  
@@ -50,7 +56,11 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
+## License
+All Microsoft Cognitive Services SDKs and samples are licensed with the MIT License. For more details, see
+[LICENSE](https://microsoft.mit-license.org/).
+
 
 ## Developer Code of Conduct
+Developers using Cognitive Services, including this client library & sample, are expected to follow the “Developer Code of Conduct for Microsoft Cognitive Services”, found at [http://go.microsoft.com/fwlink/?LinkId=698895](http://go.microsoft.com/fwlink/?LinkId=698895).
 
-https://azure.microsoft.com/en-us/resources/samples/cognitive-speech-stt-windows/
