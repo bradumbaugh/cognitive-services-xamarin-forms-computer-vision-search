@@ -30,7 +30,11 @@ This sample, along with its implementation and deployment are discussed in much 
 ### Run the sample
 After building the sample, you should be taken to a screen where you are asked to input your Bing Web Search and Computer Vision API Keys.  To attain 30-day trial keys to these APIs, see [this page](https://azure.microsoft.com/en-us/try/cognitive-services/).  For more information about attaining keys for professional use, see [Pricing](https://azure.microsoft.com/en-us/pricing/calculator/).
 
-After inputting the keys, you should be taken to a screen where you can import or capture a photo, and then feed that photo to the relevant OCR 
+After inputting the keys, you will be taken to a screen where you can import or capture a photo and feed that photo to the relevant OCR endpoint for text extraction.  
+
+This will open a table of parsed text, which you can select to query using the Bing Web Search API.
+
+Each of these Bing results can be selected to render the relevant webpage.
   
 
 ## Contributing
@@ -46,52 +50,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-## License
-
-    MIT License
-
-
-
-    Copyright (c) Microsoft Corporation. All rights reserved.
-
-
-
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-
-    of this software and associated documentation files (the "Software"), to deal
-
-    in the Software without restriction, including without limitation the rights
-
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-
-    copies of the Software, and to permit persons to whom the Software is
-
-    furnished to do so, subject to the following conditions:
-
-
-
-    The above copyright notice and this permission notice shall be included in all
-
-    copies or substantial portions of the Software.
-
-
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-
-    SOFTWARE
-
 
 ## Developer Code of Conduct
-
 
 https://azure.microsoft.com/en-us/resources/samples/cognitive-speech-stt-windows/
