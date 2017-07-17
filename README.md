@@ -17,7 +17,7 @@ This sample, along with its implementation and deployment are discussed in much 
     
 3. Navigate to the folder where you cloned this repository.
 
-4. Open the Visual Studio Solution (.sln) file `VisualSearchApp.sln` using your Visual Studio installation.  It may take a few minutes for the project to initialize.
+4. Open the Visual Studio Solution (.sln) file `VisualSearchApp.sln`.  It may take a few minutes for the project to initialize.
 
 5. Open the NuGet Package Manager (right click your solution in the solution explorer, and select `Manage NuGet Packages For Solution`)
 
