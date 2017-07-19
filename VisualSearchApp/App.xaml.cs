@@ -13,8 +13,6 @@ namespace VisualSearchApp
             InitializeComponent();
             //ApiKeys.computerVisionKey = <Add Your Cognitive Services Vision API Key Here>;
             //ApiKeys.bingSearchKey = <Add Your Bing Search API Key Here>;
-            ApiKeys.computerVisionKey = "ae8f05ea4ff246fdbcf94e5e16d1e3d1";
-            ApiKeys.bingSearchKey = "a641845d1758470ca2c92b138c6ee85c";
 
             MainPage = new NavigationPage(new OcrSelectPage());
         }
