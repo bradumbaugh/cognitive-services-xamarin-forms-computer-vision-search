@@ -6,7 +6,7 @@ author: t-jolanz
 
 # Sample - Visual Search App with Cognitive Services
 
-This sample illustrates how the [Azure Computer Vision API](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/) and [Bing Web Search API](https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/) can be used together to build a simple visual search application.  
+This sample illustrates how the [Computer Vision API](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/) and [Bing Web Search API](https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/) can be used together to build a simple visual search application.  
 
 ## The Sample
 This sample is a Xamarin.Forms application which uses the Bing Computer Vision and Bing Web Search RESTful APIs to parse text from images and then query that text on Bing.  It can import photos or capture them with the OS-default camera on Android, iOS, or the Universal Windows Platform.  
