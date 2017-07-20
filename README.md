@@ -27,7 +27,7 @@ This sample is a Xamarin.Forms application which uses the Bing Computer Vision a
 
 6. Install the **Xamarin Media Plugin** (Xam.Plugin.Media) and **Json.NET** (Newtonsoft.Json) packages.
 
-7. Select your target platform from the ribbon menu at the top of your Visual Studio window (see [guide](https://github.com/Aristoddle/azure-docs-pr/blob/master/articles/cognitive-services/Bing-Web-Search/computer-vision-web-search-tutorial.md) for more details).
+7. Select your target platform from the ribbon menu at the top of your Visual Studio window.
 
 8. Build and run the sample from this same ribbon menu.
 
