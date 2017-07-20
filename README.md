@@ -1,6 +1,6 @@
 ---
 services: cognitive-services,bing-web-search, computer-vision 
-platforms: csharp, Xamarin.Forms
+platforms: csharp, Xamarin
 author: t-jolanz
 ---
 
