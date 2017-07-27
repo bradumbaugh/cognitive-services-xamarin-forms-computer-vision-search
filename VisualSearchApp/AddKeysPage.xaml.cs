@@ -47,7 +47,7 @@ namespace VisualSearchApp
             if ((int)response.StatusCode != 401)
             {
                 ComputerVisionKeyEntry.BackgroundColor = Color.Green;
-                ApiKeys.computerVisionKey = ComputerVisionKeyEntry.Text;
+                AppConstants.ComputerVisionApiKey = ComputerVisionKeyEntry.Text;
                 computerVisionKeyWorks = true;
             }
             else
@@ -69,7 +69,7 @@ namespace VisualSearchApp
             if ((int)response.StatusCode != 401)
             {
                 BingSearchKeyEntry.BackgroundColor = Color.Green;
-                ApiKeys.bingSearchKey = BingSearchKeyEntry.Text;
+                AppConstants.BingWebSearchApiKey = BingSearchKeyEntry.Text;
                 bingSearchKeyWorks = true;
             }
             else

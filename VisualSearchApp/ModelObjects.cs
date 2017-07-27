@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Text;
 
 namespace VisualSearchApp
 {
@@ -26,14 +24,8 @@ namespace VisualSearchApp
     {
         public string name { get; set; }
         public string webSearchUrl { get; set; }
-        public int totalEstimatedMatches { get; set; }
+        public uint totalEstimatedMatches { get; set; }
         public ObservableCollection<WebValueObject> value { get; set; }
         public bool someResultsRemoved { get; set; }
-    }
-
-    public class ApiKeys
-    {
-        public static string computerVisionKey = String.Empty;
-        public static string bingSearchKey = String.Empty;
     }
 }
