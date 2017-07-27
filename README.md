@@ -4,7 +4,7 @@ platforms: csharp, Xamarin
 author: t-jolanz
 ---
 
-# Sample - Visual Search App with Cognitive Services
+# Visual Search App with Cognitive Services
 
 This sample illustrates how the [Computer Vision API](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/) and [Bing Web Search API](https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/) can be used together to build a simple visual search application.  
 
