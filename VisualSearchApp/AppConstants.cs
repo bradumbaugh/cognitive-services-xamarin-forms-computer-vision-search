@@ -16,7 +16,7 @@
         /// <summary>
         /// User's API key for the Bing Web Search API
         /// </summary>
-        public static string BingWebSearchApiKey = "478a1e606e31481bb9a6d83c3d2d3cf1";
+        public static string BingWebSearchApiKey = "";
         #endregion
 
         #region computer vision api
@@ -36,7 +36,7 @@
         /// <summary>
         /// User's API Key for the Computer Vision API
         /// </summary>
-		public static string ComputerVisionApiKey = "d732b769b1cd48d58b84e7e02bac673e";
+		public static string ComputerVisionApiKey = "";
         #endregion
     }
 }
