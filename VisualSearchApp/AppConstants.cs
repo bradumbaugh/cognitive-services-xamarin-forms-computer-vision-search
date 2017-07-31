@@ -14,7 +14,8 @@
         public const string BingWebSearchApiUrl = "https://api.cognitive.microsoft.com/bing/v5.0/search?";
 
         /// <summary>
-        /// User's API key for the Bing Web Search API
+        /// User's API key for the Bing Web Search API. Not a constant because it can get set in the app
+        /// if a user enters a key on the screen that allows key input.
         /// </summary>
         public static string BingWebSearchApiKey = "";
         #endregion
@@ -34,7 +35,8 @@
 		public const string ComputerVisionApiHandwritingUrl = "https://westus.api.cognitive.microsoft.com/vision/v1.0/recognizeText?handwriting=true";
 
         /// <summary>
-        /// User's API Key for the Computer Vision API
+        /// User's API Key for the Computer Vision API. Not a constant because it can get set in the app 
+        /// if a user enters a key on the screen that allows key input.
         /// </summary>
 		public static string ComputerVisionApiKey = "";
         #endregion

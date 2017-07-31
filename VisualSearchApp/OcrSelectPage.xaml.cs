@@ -30,7 +30,7 @@ namespace VisualSearchApp
             base.OnAppearing();
 			if (isFirstPageLoad)
 			{
-                if (AppConstants.ComputerVisionApiKey == null || AppConstants.BingWebSearchApiKey == null)
+                if (String.IsNullOrEmpty(AppConstants.ComputerVisionApiKey) || String.IsNullOrEmpty(AppConstants.BingWebSearchApiKey))
 				{
 					await Navigation.PushModalAsync(new AddKeysPage());
 				}
@@ -75,7 +75,7 @@ namespace VisualSearchApp
 			try
 			{
 				photoMediaFile = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions
-				{
+                {
 					PhotoSize = PhotoSize.Medium,
 				});
 				photoByteArray = MediaFileToByteArray(photoMediaFile);
